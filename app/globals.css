@@ -5,7 +5,7 @@
 
 :root {
   /* Soft, warm, feminine palette inspired by beauty brands and Japanese aesthetics */
-  --background: oklch(0.98 0.005 60);
+  --background: #F5F5F5;
   --foreground: oklch(0.25 0.02 60);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.25 0.02 60);
