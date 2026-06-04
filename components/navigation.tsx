@@ -34,7 +34,14 @@ export function Navigation() {
         }`}
       >
         <nav className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="text-xl font-light tracking-widest text-neutral-800 font-[family-name:var(--font-montserrat)] uppercase">
+          <Link 
+            href="/" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="text-xl font-light tracking-widest text-neutral-800 font-[family-name:var(--font-montserrat)] uppercase"
+          >
             FREELANCE MISUZU
           </Link>
 
@@ -75,7 +82,11 @@ export function Navigation() {
             <div className="px-6 py-6 flex items-center justify-between">
               <Link 
                 href="/" 
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  setIsOpen(false);
+                }}
                 className="text-xl font-light tracking-widest text-neutral-800 font-[family-name:var(--font-montserrat)] uppercase"
               >
                 FREELANCE MISUZU
