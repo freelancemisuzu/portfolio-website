@@ -22,32 +22,7 @@ export function Footer() {
             © {new Date().getFullYear()} FREELANCE MISUZU. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-8">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://dribbble.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              Dribbble
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              LinkedIn
-            </a>
-          </div>
+          {/* Social links removed */}
         </motion.div>
       </div>
     </footer>

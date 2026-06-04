@@ -6,7 +6,7 @@ export function About() {
   return (
     <section 
       id="about" 
-      className="bg-white pt-16 pb-8 md:pt-48 md:pb-24 px-6 md:px-12 lg:px-24 min-h-screen bg-[url('/about-bg-mobile.png')] md:bg-[url('/about-bg.png')] bg-contain bg-center bg-no-repeat flex flex-col justify-center"
+      className="bg-white pt-16 pb-8 md:border-t-[120px] md:border-white md:pt-48 md:pb-24 px-6 md:px-12 lg:px-24 min-h-screen bg-[url('/about-bg-mobile.png')] md:bg-[url('/about-bg.png')] bg-contain bg-center bg-no-repeat flex flex-col justify-center"
     >
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
 

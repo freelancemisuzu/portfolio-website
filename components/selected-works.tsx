@@ -74,7 +74,7 @@ export function SelectedWorks() {
               }`}
             >
               <Link 
-                href={`#${project.id}`}
+                href={`/projects/${project.id}`}
                 className={`group relative aspect-video overflow-hidden rounded-2xl ${
                   index % 2 === 1 ? "lg:order-2" : ""
                 }`}
@@ -100,7 +100,7 @@ export function SelectedWorks() {
                 
                 <div className="mt-8 flex flex-wrap gap-4">
                   <Link 
-                    href={`#${project.id}`}
+                    href={`/projects/${project.id}`}
                     className="group inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background rounded-full text-sm tracking-wide hover:bg-foreground/90 transition-colors duration-300"
                   >
                     プロジェクトを見る
