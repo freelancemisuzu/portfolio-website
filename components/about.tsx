@@ -15,7 +15,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-16 md:mt-12 space-y-8 md:space-y-10 text-[12px] md:text-[17px] leading-[2.2] md:leading-[2] text-neutral-800 font-light tracking-wide px-2 md:px-0"
+          className="mt-4 md:mt-12 space-y-8 md:space-y-10 text-[12px] md:text-[17px] leading-[2.2] md:leading-[2] text-neutral-800 font-light tracking-wide px-2 md:px-0"
         >
           <p>
             ネイルサロン向けのホームページ制作を行なっています。<br />

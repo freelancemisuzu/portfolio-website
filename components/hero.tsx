@@ -14,7 +14,7 @@ export function Hero() {
             backgroundImage: `url('/felicity-lynn-g_CYfjiaZZY-unsplash.jpg')`,
           }}
         />
-        <div className="absolute inset-0 bg-background/10 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-background/10" />
       </div>
 
       {/* Mobile Layout */}
@@ -28,31 +28,27 @@ export function Hero() {
           src="/felicity-lynn-g_CYfjiaZZY-unsplash.jpg" 
           alt="Hero background" 
           width={800} 
-          height={533} 
-          className="w-full h-auto object-contain"
+          height={1000} 
+          className="w-full aspect-[4/5] object-cover object-center"
           priority
         />
         {/* Same overlay as desktop */}
-        <div className="absolute inset-0 bg-background/10 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-background/10" />
         {/* Mobile Overlay Content */}
-        <div className="absolute inset-0 z-10 flex flex-col items-end justify-center text-right pr-8">
-          <motion.h1 
+        <div className="absolute inset-0 z-10 flex items-end justify-center pb-6 px-4">
+          <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-2xl md:text-3xl font-light tracking-widest text-neutral-800 drop-shadow-md"
+            className="flex items-baseline space-x-3 text-white drop-shadow-lg"
           >
-            MISUZU
-          </motion.h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            className="mt-1.5 text-[8px] tracking-[0.2em] uppercase text-neutral-800 font-[family-name:var(--font-montserrat)] font-light drop-shadow-md"
-          >
-            Website Designer
-          </motion.p>
+            <h1 className="text-3xl font-light tracking-widest">
+              MISUZU
+            </h1>
+            <p className="text-sm sm:text-base tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] font-light">
+              Website Designer
+            </p>
+          </motion.div>
         </div>
       </motion.div>
 
