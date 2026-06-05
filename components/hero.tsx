@@ -42,10 +42,7 @@ export function Hero() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="flex items-baseline space-x-3 text-white drop-shadow-lg"
           >
-            <h1 className="text-3xl font-light tracking-widest">
-              MISUZU
-            </h1>
-            <p className="text-sm sm:text-base tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] font-light">
+            <p className="text-lg sm:text-xl tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] font-light">
               Website Designer
             </p>
           </motion.div>

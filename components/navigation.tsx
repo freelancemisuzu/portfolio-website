@@ -33,14 +33,14 @@ export function Navigation() {
           scrolled ? "bg-background/80 backdrop-blur-md" : ""
         }`}
       >
-        <nav className="max-w-7xl mx-auto flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto flex items-center justify-between relative">
           <Link 
             href="/" 
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="text-xl font-light tracking-widest text-neutral-800 font-[family-name:var(--font-montserrat)] uppercase"
+            className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 text-xl font-light tracking-widest text-neutral-800 md:font-[family-name:var(--font-montserrat)] uppercase whitespace-nowrap"
           >
             FREELANCE MISUZU
           </Link>
@@ -61,7 +61,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(true)}
-            className="md:hidden p-2 text-neutral-800"
+            className="md:hidden p-2 text-neutral-800 ml-auto"
             aria-label="Open menu"
           >
             <Menu className="w-6 h-6" />
