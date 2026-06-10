@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col justify-center overflow-hidden md:min-h-[100dvh] md:px-16 lg:px-32 pt-28 pb-4 md:pt-0 md:pb-0 bg-white md:bg-transparent">
+    <section className="relative flex flex-col justify-center overflow-hidden md:min-h-[100dvh] md:px-16 lg:px-32 pt-40 pb-4 md:pt-0 md:pb-0 bg-white md:bg-transparent">
       {/* Desktop Background image with overlay */}
       <div className="absolute inset-0 z-0 hidden md:block">
         <div 
@@ -25,7 +25,7 @@ export function Hero() {
         className="w-full md:hidden relative z-10"
       >
         <Image 
-          src="/felicity-lynn-g_CYfjiaZZY-unsplash.jpg" 
+          src="/madeleine-wilson-ADa-tYAl_zw-unsplash.jpg" 
           alt="Hero background" 
           width={800} 
           height={1000} 
@@ -35,14 +35,14 @@ export function Hero() {
         {/* Same overlay as desktop */}
         <div className="absolute inset-0 bg-background/10" />
         {/* Mobile Overlay Content */}
-        <div className="absolute inset-0 z-10 flex items-end justify-center pb-6 px-4">
+        <div className="absolute inset-0 z-10 flex items-center justify-center p-4">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="flex items-baseline space-x-3 text-white drop-shadow-lg"
           >
-            <p className="text-lg sm:text-xl tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] font-light">
+            <p className="text-lg sm:text-xl tracking-[0.2em] uppercase font-[family-name:var(--font-montserrat)] font-bold">
               Website Designer
             </p>
           </motion.div>
@@ -64,7 +64,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-          className="mt-6 text-xl tracking-[0.3em] uppercase text-neutral-800 font-[family-name:var(--font-montserrat)] font-light"
+          className="mt-6 text-xl tracking-[0.3em] uppercase text-neutral-800 font-[family-name:var(--font-montserrat)] font-bold"
         >
           Website Designer
         </motion.p>
