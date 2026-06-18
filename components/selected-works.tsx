@@ -118,6 +118,35 @@ export function SelectedWorks() {
             </motion.article>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mt-24 md:mt-32 text-center max-w-3xl mx-auto"
+        >
+          <h3 className="text-xl md:text-2xl tracking-widest text-foreground mb-12 font-medium">
+            ネイルサロン向けのホームページ制作
+          </h3>
+          <p className="text-[13px] md:text-[16px] leading-[2.2] md:leading-[2] text-foreground font-light tracking-wide mt-4 px-4">
+            <span className="block mb-4">
+              現在、実績作りのため先着３店舗限定で<br className="md:hidden" />２０,０００円〜にて承っております。
+            </span>
+            <span className="block mb-4">
+              スマホ対応・予約導線を意識した<br className="md:hidden" />
+              ホームページをご提案いたします。<br />
+              サロンの魅力や強みを丁寧に整理し、<br className="md:hidden" />
+              新規のお客様が予約しやすい<br className="hidden md:block" />
+              ホームページを<br className="md:hidden" />
+              制作いたします。
+            </span>
+            <span className="block">
+              限られた枠での募集になりますので、<br className="md:hidden" />
+              ご興味のある方はお早めにご相談ください。
+            </span>
+          </p>
+        </motion.div>
       </div>
     </section>
   )
